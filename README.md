@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the official implementation of 
+This is the official implementation of
 **Domain Generalization by Learning and Removing Domain-specific Features**, **NeurIPS 2022**
 
 <img src="figures/lrdg.png" width="700">
@@ -35,5 +35,18 @@ python train_ds.py --src cartoon,art,photo --trg sketch
 
 ### Removing domain-specific features
 ```
-python train_lrdg.py --src art,photo,cartoon --trg sketch --resume ./checkpoints/sketch_art,photo,cartoon_train_ds/01000.pth#./checkpoints/sketch_photo,cartoon,art_train_ds/01000.pth#./checkpoints/sketch_cartoon,art,photo_train_ds/01000.pth 
+python train_lrdg.py --src art,photo,cartoon --trg sketch --resume ./checkpoints/sketch_art,photo,cartoon_train_ds/01000.pth#./checkpoints/sketch_photo,cartoon,art_train_ds/01000.pth#./checkpoints/sketch_cartoon,art,photo_train_ds/01000.pth
+```
+
+## Citation
+
+```
+@inproceedings{ding2022domain,
+ title = {Domain Generalization by Learning and Removing Domain-specific Features},
+ author = {Ding, Yu and Wang, Lei and Liang, Bin and Liang, Shuming and Wang, Yang and Chen, Fang},
+ booktitle = {Advances in Neural Information Processing Systems},
+ pages={24226--24239},
+ volume={35},
+ year = {2022}
+}
 ```
